@@ -1,4 +1,3 @@
-@import 'attention_seekers/bounce.css';
 * {
   margin: 0%;
   box-sizing: border-box;
@@ -24,34 +23,39 @@ body {
   background-size: 150rem 50rem;
   opacity: 100%;
 }
-.content{
+.content {
   text-align: center;
   justify-content: center;
-  font-family:  Bradley Hand ITC;
+  /* font-family:serif; */
+  font-family: Bradley Hand ITC;
+  font-weight: 100;
 }
-.heart{
+.heart {
   color: red;
   text-shadow: 0px 0px 5px rgba(255, 0, 0, 0.656);
   font-size: 150%;
 }
 .Hello {
   text-align: center;
-  margin-top:0%;
-  font-size: 140px;
+  margin-top: 0%;
+  font-size: 100px;
   color: white;
   text-shadow: 5px 5px #ff99cc;
+  margin-top: 5%;
 }
 .Name {
   text-align: center;
-  margin-top: 2%;
-  font-size: 150px;
+  position: relative;
+  margin-top: 0%;
+  font-size: 130px;
   color: white;
   text-shadow: 5px 5px #ff99cc;
-  
 }
 .about {
   text-align: center;
-  font-size: 35px;
+  font-size: 40px;
+  word-spacing: 10px;
+  letter-spacing: 5px;
   color: white;
   text-shadow: 5px 5px #ff99cc;
 }
@@ -80,7 +84,7 @@ body {
   font-size: 4rem;
   font-family: Bradley Hand ITC;
 }
-.cleared  {
+.cleared {
   font-family: Bradley Hand ITC;
   color: rgb(0, 0, 0);
   word-spacing: 5px;
@@ -89,13 +93,14 @@ body {
   font-size: 25px;
 }
 .projectwrppr {
-  width: 97%;
+  width: calc(100% - 60px);
   margin-left: 2rem;
   margin-right: 2rem;
   background: linear-gradient(to bottom right, #ff99cc 0%, #33ccff 100%);
   border-radius: 15px;
   bottom: 5px;
-  height: 55rem;
+  position: relative;
+  height: calc(150vh - 100px);
   font-family: Bradley Hand ITC;
   color: rgb(255, 255, 255);
   margin-top: 3rem;
@@ -112,13 +117,14 @@ body {
 }
 .top {
   margin-top: 45px;
+  margin-bottom: 40px;
 }
 .Newsletter {
-  margin-left:25%;
+  margin-left: 5%;
   margin-top: 10rem;
   margin-bottom: 10rem;
-  width: 50%;
-  height: 80vh;
+  width: calc(100% - 700px);
+  height: calc(100vh);
   color: white;
   background: linear-gradient(to bottom right, #ff99ccc0 0%, #33ccffc7 100%);
   box-shadow: 10px 10px 10px #ff99ccc8;
@@ -135,26 +141,24 @@ body {
   border: 1px solid white;
   border-radius: 4px;
   font-family: Poppins;
+  margin-bottom: 5%;
 }
-h2 {
-  margin-top: 12px;
+.lttr {
+  height: 30vh;
 }
 
 .custom-btn {
   width: 120px;
   height: 40px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   border-radius: 5px;
   text-align: center;
   padding: 2px 30px;
-  margin-top: 0%;
   font-family: "Lato", sans-serif;
   font-weight: 500;
-  background: transparent;
+  background-color: white;
   cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
+  transition: all 0.5s ease;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
@@ -164,34 +168,13 @@ h2 {
 /* 16 */
 .btn-16 {
   border: none;
-  color: #fff;
+  color: #33ccff;
   text-align: center;
 }
-.btn-16:after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 100%;
-  top: 0;
-  left: 0;
-  direction: rtl;
-  z-index: -2;
-  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
-    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
-  transition: all 0.3s ease;
-}
 .btn-16:hover {
-  color: #fff;
-  width: 20%;
+  color: #ffffff;
+  background-color: #33ccff;
   transition: all 0.3s ease;
-}
-.btn-16:hover:after {
-  left: auto;
-  right: 0;
-  width: 100%;
-}
-.btn-16:active {
-  top: 2px;
 }
 footer a {
   text-decoration: none;
@@ -209,22 +192,22 @@ footer {
 .Footer {
   margin-left: 5%;
 }
-.handle{
+.handle {
   margin-left: 70%;
 }
-.handle a{
+.handle a {
   text-decoration: none;
   font-size: 55px;
-  margin-left:5%;
+  margin-left: 5%;
   margin-top: 5%;
 }
-.handle a i:hover{
+.handle a i:hover {
   transform: scale(1.2) translateY(-30px);
-  transition: all 1.6s cubic-bezier(0.175, .0555, 0.32, 1.09);
+  transition: all .5s cubic-bezier(0.175, 0.0555, 0.32, 1.09);
   /* color: rgba(255, 182, 182, 0.53); */
   color: #00000020;
   /* text-shadow: 4px 4px 1px  rgba(255, 0, 0, 0.236)  ; */
-  text-shadow: 4px 4px 5px  rgba(199, 25, 144, 0.748)  ;
+  text-shadow: 4px 4px 5px rgba(199, 25, 144, 0.748);
 }
 .twt-handle,
 .inst-handle,
@@ -245,50 +228,58 @@ footer {
 .github-profile {
   color: black;
 }
-.tele:hover{
-  color: rgba(0, 0, 0, 0.555);
-}
 
 .heading {
-  animation:all  2s ease-in;
+  animation: fade-in 2s ease-in;
 }
 @keyframes fade-in {
   0% {
     opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
   }
 }
 
-.Html,.CSS,.Nodejs
-{
-  font-size: 150px;
-  margin-left:10%;
+.Html,
+.CSS,
+.git,
+.javascript {
+  margin: 10%;
+  font-family: Besans;
+  font-size: 150%;
 }
-.Html i:hover{
-  transform: scale(1.2);
-  color: #E65100;
-  transition: all 1s cubic-bezier(0.175, -0.885, 0.32, 1.275);
-} 
-.CSS i:hover{ 
-   transform: scale(1.1);
-   color: #0277BD;
-   transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-} 
-.Nodejs i:hover{ 
-  transform: scale(1.2);
-  color: rgb(243, 85, 28);
-  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-} 
-.Jquery:hover{
-  width:150rem;
-  height: 150rem;
-  background-color: #F0D91F;
+
+
+.carousel{
+  background: #EEE;
 }
-.Jquery img:hover{
-  transform: scale(1.2);
-  color: white;
+
+.carousel-cell {
+  width: 66%;
+  margin-right: 10px;
+  background: #8C8;
+  opacity: .3;
   border-radius: 5px;
-  transition: all 5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+#carousel{
+  margin-top: 5%;
+}
+#carousel span,#caras{
+  font-weight:900 ;
 }
