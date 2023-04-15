@@ -59,12 +59,6 @@ body {
   color: white;
   text-shadow: 5px 5px #ff99cc;
 }
-.phto {
-  position: absolute;
-  float: left;
-  width: 90rem;
-  height: 10rem;
-}
 #class {
   float: left;
   margin-left: 10%;
